@@ -1,0 +1,27 @@
+{
+  "name": "full-stack",
+  "version": "1.0.0",
+  "description": "This is a sample directory",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevingeother/Full-Stack.git"
+  },
+  "keywords": [
+    "Full_Stack"
+  ],
+  "author": "Kevin George",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevingeother/Full-Stack/issues"
+  },
+  "homepage": "https://github.com/kevingeother/Full-Stack#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
