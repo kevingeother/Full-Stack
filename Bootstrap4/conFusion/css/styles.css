@@ -71,3 +71,9 @@ body {
     bottom: initial;   
     /* or simply add a pb value class to the div   */
 }
+
+#carouselButton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+}
