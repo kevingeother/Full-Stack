@@ -39,10 +39,6 @@ body {
     background-color: #512da8;
 }
 
-.reservation-yellow {
-    background-color: #ffcc00;
-}
-
 .tab-content{
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
@@ -72,9 +68,25 @@ body {
     /* or simply add a pb value class to the div   */
 }
 
+.reservation-yellow {
+    background-color: #ffcc00;
+}
+
 #carouselButton {
     right: 0px;
     position: absolute;
     bottom: 0px;
     z-index: 1;
-  }
+}
+
+.modal-header {
+    background: #512DA8;
+    color: floralwhite; }
+    .modal-header .close {
+      color: floralwhite; 
+}
+  
+  .modal-body {
+    background: #D1C4E9; 
+}
+  

@@ -30,8 +30,14 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-adsress-card fa-lg"></span>Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <!-- Using data-* attributes and modal -->
+                    <!-- <a data-toggle="modal" data-target="#loginModal">
                         <span class="fa fa-sign-in"><strong>Login</strong></span>
+                    </a> -->
+
+                    <!-- Using Javascript to toggle Modal -->
+                    <a id="loginButton">
+                        <span class="fa fa-sign-in"><strong> Login</strong></span>
                     </a>
                 </span>
             </div>
@@ -73,12 +79,12 @@
         </div>
     </div>
 
-    <div id="reserveModal" class="modal fade" role="dialog">
+    <div  class="modal fade" id="reserveModal" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header reservation-yellow">
                     <h4 class="modal-title ">Reserve a Table</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -142,7 +148,13 @@
                         data-toggle="tooltip" data-html="true"
                         title="Or Call us at <br><strong>+852 12345678</strong>"
                         data-placement="bottom">Reserve Table</a> -->
-                    <a data-toggle="modal" data-target="#reserveModal" role="button" class="btn btn-block nav-link btn-warning">
+
+                    <!-- Reserve Tabel using data-* attributes and Modal -->
+                    <!-- <a data-toggle="modal" data-target="#reserveModal" role="button" class="btn btn-block nav-link btn-warning">
+                        Reserve Table</a> -->
+
+                    <!-- Using JS -->
+                    <a id="reserveButton" role="button" class="btn btn-block nav-link btn-warning" >
                         Reserve Table</a>
                 </div>
             </div>
@@ -338,6 +350,21 @@
             });
         });
     </script>
+
+    <!-- Reserve JScript -->
+    <script>
+        $('#reserveButton').click(function(){
+            $('#reserveModal').modal('show');
+        });
+    </script>
+
+    <!-- Login JScript -->
+    <script>
+        $('#loginButton').click(function(){
+            $('#loginModal').modal("show");
+        });
+    </script>
+    
 </body>
 
 </html>
